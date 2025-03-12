@@ -195,7 +195,7 @@ try {
 			options.setTextCompression(PdfTextCompression.FLATE);
 			options.setImageCompression(PdfImageCompression.AUTO);
 			// Save Word as PDF
-			doc.save("E:\\BrowserCompatibility_HIS\\TestResults\\"+browsername+" "+DocFileName+" "+dateName+".pdf", options);
+			doc.save("C:\\Users\\Presto admin\\git\\AutomationCode\\TestResults\\"+browsername+" "+DocFileName+" "+dateName+".pdf", options);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
