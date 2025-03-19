@@ -26,7 +26,6 @@ import com.qa.pages.Loginpage;
 import com.qa.pages.SelectHospitalLocationPage;
 import com.qa.util.util;
 
-import io.netty.handler.timeout.TimeoutException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

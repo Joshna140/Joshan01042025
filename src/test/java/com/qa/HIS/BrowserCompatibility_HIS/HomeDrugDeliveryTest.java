@@ -24,7 +24,6 @@ import com.qa.pages.SelectHospitalLocationPage;
 import com.qa.pages.HomeDrugDeliveryPage;
 import com.qa.util.util;
 
-import io.netty.handler.timeout.TimeoutException;
 
 @SuppressWarnings("unused")
 public class HomeDrugDeliveryTest extends CrossBrowser {

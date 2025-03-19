@@ -26,7 +26,6 @@ import com.qa.pages.MAPage;
 import com.qa.pages.SelectHospitalLocationPage;
 import com.qa.util.util;
 
-import io.netty.handler.timeout.TimeoutException;
 
 @SuppressWarnings("unused")
 public class MAApprovalTest1  extends CrossBrowser {

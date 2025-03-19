@@ -4,18 +4,19 @@
   <listeners>
     <listener class-name="com.qa.HIS.BrowserCompatibility_HIS.Listner"/>
   </listeners>
-  <test thread-count="5" name="Chrome(failed)">
-    <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.qa.HIS.BrowserCompatibility_HIS.DoctorWorklistTest">
         <methods>
           <include name="CLM_Dr_worklist_TC_3"/>
-          <include name="CLM_Dr_worklist_TC_16"/>
           <include name="CLM_Dr_worklist_TC_5" invocation-numbers="0"/>
+          <include name="CLM_Dr_worklist_TC_16"/>
           <include name="doNavigateToDoctorWorklistTest"/>
           <include name="CLM_Dr_worklist_TC_15"/>
-          <include name="CLM_Dr_worklist_TC_17"/>
           <include name="closeBrowser"/>
+          <include name="CLM_Dr_worklist_TC_17"/>
+          <include name="doNavigateToPatientCheckInTest"/>
           <include name="CLM_Dr_worklist_TC_10"/>
           <include name="CLM_Dr_worklist_TC_4"/>
           <include name="CLM_Dr_worklist_TC_12"/>
@@ -26,5 +27,5 @@
         </methods>
       </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.DoctorWorklistTest -->
     </classes>
-  </test> <!-- Chrome(failed) -->
+  </test> <!-- Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

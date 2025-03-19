@@ -4,11 +4,11 @@
 <listeners>
 		<listener class-name="com.qa.HIS.BrowserCompatibility_HIS.Listner" />
 </listeners>
-   <!--test thread-count="5" name="Firefox">
+   <test thread-count="5" name="Firefox">
   <parameter name="browser" value="firefox" />
     <classes>
       <class name="com.qa.HIS.BrowserCompatibility_HIS.DoctorWorklistTest"/>
-     <class name="com.qa.HIS.BrowserCompatibility_HIS.ANMServicesTest"/>
+     <!--class name="com.qa.HIS.BrowserCompatibility_HIS.ANMServicesTest"/>
       <class name="com.qa.HIS.BrowserCompatibility_HIS.FUPTest"/>
       <class name="com.qa.HIS.BrowserCompatibility_HIS.OrderPacksTest"/>
             <class name="com.qa.HIS.BrowserCompatibility_HIS.DosageTypeTest"/>
@@ -18,14 +18,14 @@
            <class name="com.qa.HIS.BrowserCompatibility_HIS.InpatientEmergencyPatientTest"/>
            <class name="com.qa.HIS.BrowserCompatibility_HIS.Clinical_Record_ReportTest"/>
              <class name="com.qa.HIS.BrowserCompatibility_HIS.MaternityCertificateTest"/>
-             <class name="com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest"/>
+             <class name="com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest"/-->
     </classes>
-  </test-->   
-   <test thread-count="5" name="Chrome">
+  </test>   
+   <!--test thread-count="5" name="Chrome">
   <parameter name="browser" value="Chrome" />
     <classes>
     <class name="com.qa.HIS.BrowserCompatibility_HIS.DoctorWorklistTest"/>
-      <!--class name="com.qa.HIS.BrowserCompatibility_HIS.ANMServicesTest"/>
+      <class name="com.qa.HIS.BrowserCompatibility_HIS.ANMServicesTest"/>
          <class name="com.qa.HIS.BrowserCompatibility_HIS.FUPTest"/>
          <class name="com.qa.HIS.BrowserCompatibility_HIS.OrderPacksTest"/>
          <class name="com.qa.HIS.BrowserCompatibility_HIS.DosageTypeTest"/>
@@ -33,9 +33,9 @@
          <class name="com.qa.HIS.BrowserCompatibility_HIS.MiniCaseSheetTest"/>
          <class name="com.qa.HIS.BrowserCompatibility_HIS.DischargeSummaryTest"/>
          <class name="com.qa.HIS.BrowserCompatibility_HIS.InpatientEmergencyPatientTest"/>
-         <class name="com.qa.HIS.BrowserCompatibility_HIS.DischargeIntimationTest"/-->
+         <class name="com.qa.HIS.BrowserCompatibility_HIS.DischargeIntimationTest"/>
     </classes>
-  </test>
+  </test-->
   <!--test thread-count="5" name="Edge">
   <parameter name="browser" value="Edge" />
     <classes>

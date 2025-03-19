@@ -29,8 +29,6 @@ import com.qa.pages.MADOLetterpage;
 import com.qa.pages.SelectHospitalLocationPage;
 import com.qa.util.util;
 
-import io.netty.handler.timeout.TimeoutException;
-
 @SuppressWarnings("unused")
 public class MADOLettertest  extends CrossBrowser {
 	

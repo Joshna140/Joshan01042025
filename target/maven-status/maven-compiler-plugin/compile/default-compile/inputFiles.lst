@@ -1,88 +1,88 @@
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_nursetaskspages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PatientCheckInPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\util\ReadDataFile.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Emergency_Check_In_RegistrationPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\DischargeIntimationPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\HomePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage4.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PhysicalStockEntryPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\AdjustmentLBStoreConsumptionPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage9.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PrevantingHealthCheckUpPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_progressnotespages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\C13622_MISC_Change_In_HIS_ITR2_Page.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\SelectHospitalLocationPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\CDRPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PM10639_printAndCutomizedPrint_SubsituteItemPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Registration_ReportPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MaternityCertificatePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\StoreReportPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_intakeoutputentrypages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Loginpage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAStatusDoletterpage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\AlterMRPPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage8.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage5.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Inpatient_EmergencyPatientpages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\UHIDPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\C13622_MISC_Change_In_HIS_Page.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\CasesheetPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\ANMServicesPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\OrderPacksPage2.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MADOLetterpage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\RackPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage3.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\SupplierManufactureBrandPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PM10758_DirectIssuePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_specialtyprocedurerequestpages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PM10638_LaboratoryPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\EditCertificatePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\util\Steps.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\OperationTheatrePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\DosageTypePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_AmbulanceRequestPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_warddashboardpages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\SpecilityWiseReport_SST.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Clinical_Record_ReportPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\HISHomePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_TransferRequestPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage6.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_Reportspages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\StoreConsumptionPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_vitalsentrypages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\HomeDrugDeliveryPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_wardunitspages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\OrderPacksPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_surgeryrequestpages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MISReportPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\util\util.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\DischargeSummaryPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\BasePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\PatientAdmissionPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_primarydoctorchangepages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\ReportTemplatePage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\DoctorWorklistPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MaternityCertificatepages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\AudioVideoConsultationCR.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAHQdoLetterPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\CancelCheckinPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\GatePassPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage2.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Page.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagment_DoctorVisitPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Investigation_PrescriptionsPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Check_In_Admission_of_Reffered_PatientsPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\OpenVisitPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_bedsideproceduresorderpages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\FUPPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\InpatientManagement_wardbedstatuspages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\Miscellaneous_Changes_in_Clinical_RecordsPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\BedStatusPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\IndentRaisedworkFlowPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MAPage7.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\OPDFlowPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\ShelfPage.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\util\Constant.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\IPDFlowPages.java
-E:\Automation_Workspace\BrowserCompatibility_HIS\src\main\java\com\qa\pages\MiniCaseSheetPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Investigation_PrescriptionsPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_primarydoctorchangepages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MISReportPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\OrderPacksPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_intakeoutputentrypages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage2.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\ANMServicesPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage8.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Emergency_Check_In_RegistrationPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\DischargeIntimationPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\AdjustmentLBStoreConsumptionPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Page.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage7.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\OpenVisitPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_specialtyprocedurerequestpages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\CDRPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MaternityCertificatePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\HISHomePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\AudioVideoConsultationCR.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_TransferRequestPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\C13622_MISC_Change_In_HIS_Page.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagment_DoctorVisitPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\StoreReportPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_surgeryrequestpages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_progressnotespages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\SelectHospitalLocationPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_wardunitspages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\BedStatusPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAHQdoLetterPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Clinical_Record_ReportPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\HomePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\DischargeSummaryPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_warddashboardpages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MiniCaseSheetPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\CancelCheckinPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\util\ReadDataFile.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\FUPPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\util\Steps.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_bedsideproceduresorderpages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PatientAdmissionPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PatientCheckInPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\util\util.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\DosageTypePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\AlterMRPPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PrevantingHealthCheckUpPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\GatePassPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PM10638_LaboratoryPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Inpatient_EmergencyPatientpages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage5.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\util\Constant.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Check_In_Admission_of_Reffered_PatientsPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\StoreConsumptionPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_vitalsentrypages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage4.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\HomeDrugDeliveryPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_wardbedstatuspages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\ReportTemplatePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\BasePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\DoctorWorklistPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Registration_ReportPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_Reportspages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\C13622_MISC_Change_In_HIS_ITR2_Page.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\ShelfPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_AmbulanceRequestPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage6.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage9.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAPage3.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MaternityCertificatepages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PM10758_DirectIssuePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\EditCertificatePage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MADOLetterpage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\MAStatusDoletterpage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\SpecilityWiseReport_SST.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Miscellaneous_Changes_in_Clinical_RecordsPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\CasesheetPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\UHIDPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\IndentRaisedworkFlowPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\OrderPacksPage2.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\SupplierManufactureBrandPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\OPDFlowPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PM10639_printAndCutomizedPrint_SubsituteItemPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\IPDFlowPages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\Loginpage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\PhysicalStockEntryPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\RackPage.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\InpatientManagement_nursetaskspages.java
+C:\Users\Presto admin\git\AutomationCode\src\main\java\com\qa\pages\OperationTheatrePage.java

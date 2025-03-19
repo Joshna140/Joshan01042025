@@ -32,8 +32,6 @@ import com.qa.pages.MAStatusDoletterpage;
 import com.qa.pages.SelectHospitalLocationPage;
 import com.qa.util.util;
 
-import io.netty.handler.timeout.TimeoutException;
-
 @SuppressWarnings("unused")
 public class MAStatusDoLettertest  extends CrossBrowser {
 	
