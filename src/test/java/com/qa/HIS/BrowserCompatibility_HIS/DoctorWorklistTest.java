@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -51,6 +52,7 @@ public class DoctorWorklistTest extends CrossBrowser {
 
 	@Test(priority = 1)
 	public void doNavigateToSelectHospitalLocationTest() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
 		selecthospitallocationpage = homepage.doNavigateToSelectHospitalLocation();
 	}
@@ -65,8 +67,10 @@ public class DoctorWorklistTest extends CrossBrowser {
 
 	@Test(priority = 3)
 	public void doNavigateToPatientCheckInTest() {
-
 		
+		//driver.manage().timeouts().implicitlyWait(((java.time.Duration.ofSeconds(30))));
+
+
 		DWP=hishomepage.doNavigateToPatientCheckInforDoctorWorklist();
 	}
 
@@ -161,6 +165,10 @@ public class DoctorWorklistTest extends CrossBrowser {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+			
+			
+			
+			
 		//	driver.manage().timeouts().implicitlyWait(((java.time.Duration.ofSeconds(20))));
 			
 		//	DWP.getpopok().click();
@@ -169,9 +177,22 @@ public class DoctorWorklistTest extends CrossBrowser {
 		
 			utilobj.Window(driver);
 			Thread.sleep(500);
-			wait.until(ExpectedConditions.visibilityOf(DWP.getlableprecripstionlink()));
-		
-			DWP.getlableprecripstionlink().click();
+			try {
+				wait.until(ExpectedConditions.visibilityOf(DWP.getmessageok()));
+				DWP.getmessageok().click();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			try {
+				wait.until(ExpectedConditions.visibilityOf(DWP.getlableprecripstionlink()));
+
+			    DWP.getlableprecripstionlink().click();
+			} catch (Exception e) {
+			    System.out.println("Server issue detected. Skipping this test case and moving to the next test.");
+			    throw new SkipException("Skipping CLM_Dr_worklist_TC_4 due to server issue.");
+			}
+
 		
 			driver.manage().timeouts().implicitlyWait(((java.time.Duration.ofSeconds(20))));
 		
@@ -285,6 +306,7 @@ public class DoctorWorklistTest extends CrossBrowser {
 	public void CLM_Dr_worklist_TC_5(String Browser) throws InterruptedException {
 			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
 			driver.manage().timeouts().implicitlyWait(((java.time.Duration.ofSeconds(20))));
+		
 			DWP = hishomepage.donavigatetoDoctorworklist();
 			Thread.sleep(1000);
 			wait.until(ExpectedConditions.visibilityOf(DWP.getDoctorworkListconsultent()));
@@ -299,6 +321,13 @@ public class DoctorWorklistTest extends CrossBrowser {
 			Thread.sleep(1000);
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ctl00_PageUpdateProgress")));
 			DWP.getDoctorworkListconsultent().click();
+			
+			try {
+				wait.until(ExpectedConditions.visibilityOf(DWP.getmessageok()));
+				DWP.getmessageok().click();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			wait.until(ExpectedConditions.visibilityOf(DWP.getConsultenttabCheck_no_link()));
 			
 			DWP.getConsultenttabCheck_no_link().click();

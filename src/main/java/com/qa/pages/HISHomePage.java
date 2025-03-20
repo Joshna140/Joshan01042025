@@ -22,7 +22,7 @@ public class HISHomePage extends BasePage {
 	}
 
 	/* Registration module */
-	private By RegistrationLink = By.partialLinkText("Registration");
+	private By RegistrationLink = By.linkText("Registration");
 	public WebElement getRegistrationLink() {
 		return getElement(RegistrationLink);
 
@@ -211,7 +211,7 @@ public class HISHomePage extends BasePage {
 	
 
 /* Patient CheckIn */
-	private By PatientCheckInLink = By.partialLinkText("Patient Check-In /Registration");
+	private By PatientCheckInLink = By.linkText("Patient Check-In /Registration");
 
 	private By PatientAdmissionLink = By.linkText("Patient Admission");
 

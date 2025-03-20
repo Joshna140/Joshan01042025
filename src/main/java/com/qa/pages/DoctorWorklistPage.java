@@ -24,6 +24,8 @@ boolean checkinformsg;
 	private By MiniSheetOpenLink=By.id("ctl00_cphpage_gdvSpecialization_ctl02_lblBillNo2");
 	                                                 
 	private By popok = By.id("popup_ok");
+	private By messageok = By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK");
+	
 	                                                
 	private By lableprecripstionlink = By.id("ctl00_cphpage_trvSectionst11");
 	                                  /* before */
@@ -166,6 +168,11 @@ boolean checkinformsg;
 
 	public WebElement getpopok() {
 		return getElement(popok);
+
+	}
+	
+	public WebElement getmessageok() {
+		return getElement(messageok);
 
 	}
 
