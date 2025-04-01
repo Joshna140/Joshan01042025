@@ -26,6 +26,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTP;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTR;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr;
@@ -81,7 +82,7 @@ public class Reusable_methods
 		XWPFHeaderFooterPolicy policy=new XWPFHeaderFooterPolicy(doc,sectPr);
 		
 		// Creating Header objects
-		CTP ctpHeader=CTP.Factory.newInstance();
+		CTP ctpHeader=(CTP)CTP.Factory.newInstance();
 		CTR ctrHeader=ctpHeader.addNewR();
 		CTText ctHeader=ctrHeader.addNewT();
 		
@@ -104,7 +105,8 @@ public class Reusable_methods
 		policy.createHeader(XWPFHeaderFooterPolicy.DEFAULT,parsHeader);
 		
 		//Create Footer Objects
-		CTP ctpFooter=CTP.Factory.newInstance();
+		
+		CTP ctpFooter = (CTP) CTP.Factory.newInstance();
 		CTR ctrFooter=ctpFooter.addNewR();
 		CTText ctFooter=ctrFooter.addNewT();
 		

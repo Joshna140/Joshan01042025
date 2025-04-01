@@ -69,11 +69,7 @@ public class Listner extends CrossBrowser implements ITestListener {
 			 }
 			extentTest.get().fail(result.getThrowable());
 			String dest=utilobj.getScreenshot(driver, result.getMethod().getMethodName());
-			try {
-				extentTest.get().addScreenCaptureFromPath(dest);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			extentTest.get().addScreenCaptureFromPath(dest);
 		}
 
 		

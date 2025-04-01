@@ -67,7 +67,7 @@ public class MiniCaseSheetPages extends BasePage {
 		return getElement(popupmessage);
 
 	}
-	private By minicasesheetcmplain_autoserch=By.id("Abuse");
+	private By minicasesheetcmplain_autoserch=By.id("Abuse of disabled person");
 	public WebElement getminicasesheetcmplain_autoserchLink() {
 		return getElement(minicasesheetcmplain_autoserch);
 		
@@ -182,7 +182,7 @@ private By minicasesheet_SNOMED_search=By.id("ctl00_cphpage_txtICDDiagnosis");
 public WebElement getminicasesheet_SNOMED_searchLink() {
 	return getElement(minicasesheet_SNOMED_search);
 }
-private By minicasesheet_SNOMED_search_selectAbscess=By.id("128477000$Abscess");
+private By minicasesheet_SNOMED_search_selectAbscess=By.id("27916005$Abscess of liver");
 public WebElement getminicasesheet_SNOMED_search_selectAbscessLink() {
 	return getElement(minicasesheet_SNOMED_search_selectAbscess);
 }

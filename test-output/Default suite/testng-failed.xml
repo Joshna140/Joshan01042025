@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest">
+      <class name="com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest">
         <methods>
+          <include name="ChecktheFunctionalityOfUpdateButtonOfEditMeternityCertificatePages"/>
+          <include name="CheckTheFunctionalityOfRequestForChangedUPdateButton"/>
+          <include name="doNavigateToHISHomeTest"/>
+          <include name="doNavigateToSelectHospitalLocationTest"/>
+          <include name="doLoginOpenVisitTest"/>
+          <include name="ChecktheFunctionalityOftoNavigateToEditMeternityCertificatePages"/>
           <include name="closeBrowser"/>
-          <include name="CheckFunctionalityOfPastHistory"/>
+          <include name="doNavigateToEditCertificateTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest -->
+      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

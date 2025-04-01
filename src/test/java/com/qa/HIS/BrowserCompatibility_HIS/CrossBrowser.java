@@ -112,7 +112,7 @@ public class CrossBrowser {
 		        opt.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE);  // Handles unexpected alerts
 
 			
-			WebDriverManager.chromedriver().version("2.40").setup();
+			WebDriverManager.chromedriver().browserVersion("2.40").setup();
 //			 System.out.println("Browser Name is : "+((RemoteWebDriver) driver).getCapabilities().getBrowserName().toLowerCase());
 //		        System.out.println("Browser Version is : "+((RemoteWebDriver) driver).getCapabilities().getVersion().toString());
 //		        System.out.println("Platform Name is : "+((RemoteWebDriver) driver).getCapabilities().getPlatform().toString());

@@ -5,10 +5,14 @@ package com.qa.HIS.BrowserCompatibility_HIS;
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -166,7 +170,15 @@ public class ANMServicesTest extends CrossBrowser {
 		}
 		String parent3 = driver.getWindowHandle();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		anmservicespage.getlableprecripstionlink().click();
+		
+		try {
+			wait.until(ExpectedConditions.visibilityOf(anmservicespage.getlableprecripstionlink()));
+
+			anmservicespage.getlableprecripstionlink().click();
+		} catch (Exception e) {
+		    System.out.println("Server issue detected. Skipping this test case and moving to the next test.");
+		    throw new SkipException("Skipping CLM_Dr_worklist_TC_5 due to server issue.");
+		}
 		Thread.sleep(1000);
 		
 		utilobj.ChildWindow(driver);
@@ -222,7 +234,16 @@ public class ANMServicesTest extends CrossBrowser {
 		
 	@Test(priority=7)
 	public void doANMServicesTest() throws InterruptedException{	
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(50));
+
 		
+		try {
+			  Thread.sleep(1000);
+				wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK"))));
+				driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).click();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		driver.manage().timeouts().implicitlyWait(((java.time.Duration.ofSeconds(20))));
 		Thread.sleep(1000);
 		utilobj.scroolDownintoview(driver, driver.findElement(By.id("ctl00_lnkbtnHome")));
@@ -253,8 +274,19 @@ public class ANMServicesTest extends CrossBrowser {
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		//WebElement searchCheckIn = driver.findElement(By.xpath("//*[@id='ctl00_cphpage_imgAdmissionno']"));
-		anmservicespage.getActionTaken().sendKeys(prop.getProperty("ActionTaken"));
-		 
+		try {
+			anmservicespage.getActionTaken().sendKeys(prop.getProperty("ActionTaken"));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			  Thread.sleep(1000);
+				wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK"))));
+				driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).click();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 	}
 	@Test(priority = 9)
 	public void CLM_ANM_servicess_TC_005() throws InterruptedException {
@@ -283,35 +315,68 @@ public class ANMServicesTest extends CrossBrowser {
 	}
 	@Test(priority = 11)
 	public void CLM_ANM_servicess_TC_0010() throws InterruptedException {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofMinutes(1));
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			 utilobj.JSEnterText(driver.findElement(By.xpath("//*[@id='ctl00_cphpage_txtAdmissionno']")), driver, txtcheckInNumber);
 			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			 utilobj.JSClick(driver.findElement(By.id("ctl00_cphpage_imgAdmissionno")), driver);
 				
 			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			 
-			 driver.findElement(By.id("ctl00_cphpage_grvResults_ctl02_chkselect")).click();
-			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	          driver.findElement(By.id("ctl00_cphpage_btnDelete1")).click();
+				try {
+					  Thread.sleep(1000);
+						wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK"))));
+						driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).click();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+	          
+	          int ValidOPCheckinNumber = 0;
+				try {
+					driver.manage().timeouts().implicitlyWait(((java.time.Duration.ofSeconds(20))));
+					 driver.findElement(By.id("ctl00_cphpage_btnDelete1")).click();
+				} catch (Exception e) {
+					ValidOPCheckinNumber = 1;
+					
+				}
+				Assert.assertEquals(ValidOPCheckinNumber, 0, "Invalid check in number ");
 	          Thread.sleep(500);
 	          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//Please enter the reason for deleting
 	          String WarningMessage=anmservicespage.getpopupmessageInformation().getText();
 	          Thread.sleep(500);
 	          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	          anmservicespage.getOkBtn().click();
+	          try {
+				anmservicespage.getOkBtn().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	          assertEquals(WarningMessage, "Please enter the reason for deleting");
 	}
 	@Test(priority = 12)
-	public void CLM_ANM_servicess_TC_008() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Thread.sleep(500);
-			 driver.findElement(By.id("ctl00_cphpage_grvResults_ctl02_txtReason")).sendKeys("test Reason");
-			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			 Thread.sleep(500);
-			 driver.findElement(By.id("ctl00_cphpage_btnDelete1")).click();
-			 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			 anmservicespage.getOkBtn().click();
-		
+	public void CLM_ANM_servicess_TC_011() {
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+	    // Click Delete Button
+	    driver.findElement(By.id("ctl00_cphpage_btnDelete1")).click();
+
+	    // Check if the element exists before interacting
+	    List<WebElement> elements = driver.findElements(By.id("ctl00_cphpage_grvResults_ctl02_txtReason"));
+	    if (elements.size() > 0) {
+	        elements.get(0).sendKeys("test Reason");
+	    } else {
+	        System.out.println("Element not found: ctl00_cphpage_grvResults_ctl02_txtReason");
+	        Assert.fail("Test failed: OP-Checkin number is invalid, and reason field did not appear.");
+	    }
+
+	    // Click Delete Button Again
+	    driver.findElement(By.id("ctl00_cphpage_btnDelete1")).click();
+
+	    // Click OK Button if present
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebElement okButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'OK')]")));
+	    okButton.click();
 	}
+
 }

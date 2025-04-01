@@ -93,8 +93,9 @@ public class MaternityCertificateTest extends CrossBrowser{
 			//opdflowPages.getgenratechekIn();	
 			Thread.sleep(500);
 			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(60));
+			driver.manage().window().maximize();
 			 wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ctl00_cphpage_txtIPNO")));
-			 driver.findElement(By.id("ctl00_cphpage_txtIPNO")).sendKeys("1115104628");
+			 driver.findElement(By.id("ctl00_cphpage_txtIPNO")).sendKeys("1115104365");
 			 Thread.sleep(500);
 			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_cphpage_lnkbtnIPNo")));
 				driver.findElement(By.id("ctl00_cphpage_lnkbtnIPNo")).click();
@@ -143,6 +144,8 @@ public class MaternityCertificateTest extends CrossBrowser{
 			  Thread.sleep(500);
 			
 			wait.until(ExpectedConditions.visibilityOf(MaternityCertificatePage.getcheckin_no_link_Link()));
+			
+			//getimgConsultation
 			MaternityCertificatePage.getTxtboxCheckInno().sendKeys(checkIN);
 			Thread.sleep(2000);
 			MaternityCertificatePage.getimgCheckinnosearch().click();
@@ -156,6 +159,36 @@ public class MaternityCertificateTest extends CrossBrowser{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
+			try {
+				MaternityCertificatePage.getButtonOK().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			try {
+				MaternityCertificatePage.getbtnback().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			try {
+				MaternityCertificatePage.getcheckinno().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			try {
+				MaternityCertificatePage.getpopup_ok().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
 			Thread.sleep(2000);
 			MaternityCertificatePage.getgeneralexam().click();
 			Thread.sleep(500);
@@ -168,6 +201,10 @@ public class MaternityCertificateTest extends CrossBrowser{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
+		
+			
+		
 			
 			Thread.sleep(500);
 			MaternityCertificatePage.gettxtRemark().sendKeys("30");
@@ -222,10 +259,10 @@ public class MaternityCertificateTest extends CrossBrowser{
 		@Test(priority = 7)
 		@Parameters("browser")
 		public void testcaseforMaternityCertification(String Browser) throws InterruptedException, AWTException, IOException, XmlException {
-			WebDriverWait wait=new WebDriverWait(driver, Duration.ofMinutes(2));
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(60));
 			
 			Thread.sleep(5000);
-		MC.getMaternitycertification_IPnoLink().click();
+			MC.getMaternitycertification_IPnoLink().click();
 			Thread.sleep(4000);
 			MC.getMaternitycertification_IPno_searchtextboxLink().sendKeys("1199900090");
 			Thread.sleep(4000);

@@ -4,24 +4,17 @@
   <listeners>
     <listener class-name="com.qa.HIS.BrowserCompatibility_HIS.Listner"/>
   </listeners>
-  <test thread-count="5" name="Chrome(failed)">
-    <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.HIS.BrowserCompatibility_HIS.DoctorWorklistTest">
+      <class name="com.qa.HIS.BrowserCompatibility_HIS.MaternityCertificateTest">
         <methods>
-          <include name="CLM_Dr_worklist_TC_3"/>
-          <include name="CLM_Dr_worklist_TC_11"/>
-          <include name="CLM_Dr_worklist_TC_16"/>
-          <include name="CLM_Dr_worklist_TC_5" invocation-numbers="0"/>
-          <include name="CLM_Dr_worklist_TC_15"/>
-          <include name="CLM_Dr_worklist_TC_17"/>
+          <include name="docreate_materntycertificate"/>
           <include name="closeBrowser"/>
-          <include name="CLM_Dr_worklist_TC_4"/>
+          <include name="testcaseforMaternityCertification" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="CLM_Dr_worklist_TC_12"/>
-          <include name="CLM_Dr_worklist_TC_6"/>
         </methods>
-      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.DoctorWorklistTest -->
+      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.MaternityCertificateTest -->
     </classes>
-  </test> <!-- Chrome(failed) -->
+  </test> <!-- Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -153,8 +153,16 @@ public class MaternityCertificatePage extends BasePage {
 	public WebElement getButtonOK() {
 		return getElement(ButtonOK);
 	}
+	private By btnback=By.id("ctl00_cphpage_btnBack");
+	public WebElement getbtnback() {
+		return getElement(btnback);
+	}
 	private By ddlOutcomeofPregnancy=By.id("ctl00_cphpage_ddlOutcomeofPregnancy");
 	public WebElement getddlOutcomeofPregnancy() {
 		return getElement(ddlOutcomeofPregnancy);
+	}
+	private By imgConsultation=By.id("ctl00_cphpage_imgConsultation");
+	public WebElement getimgConsultation() {
+		return getElement(imgConsultation);
 	}
 	}

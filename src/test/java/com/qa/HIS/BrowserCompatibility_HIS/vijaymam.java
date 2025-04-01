@@ -81,7 +81,7 @@ ChromeOptions opt = new ChromeOptions();
 		
 		opt.addArguments("start-maximized");
 		opt.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");		
-		WebDriverManager.chromedriver().version("2.40").setup();
+		WebDriverManager.chromedriver().browserVersion("2.40").setup();
 		driver = new ChromeDriver(opt);
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 //give counts of link on the page,count link in footer section
