@@ -43,6 +43,7 @@ public class Inpatient_EmergencyPatientpages extends BasePage {
 	private By Inpatient_Emergencypatient_Medicine_minus=By.xpath("//html//body//div[@id='wrapper']//table[@id='orders']/tbody/tr[@id='ctl00_cphpage_lstViewUnit_ctrl0_row']//img");
 	                                                              
 	private By Inpatient_Emergencypatient_Medicine_bed02imgclick=By.id("ctl00_cphpage_lstViewUnit_ctrl1_lstViewUnitBeds_ctrl0_imgComDetails");
+	
 	/*inpatient_emergency module/ Emergency Unit*/
 	
 	private By Inpatient_Emergencypatient_EmergencyUnit_pluse=By.xpath("//html//body//div[@id='wrapper']//table[@id='orders']/tbody/tr[@id='ctl00_cphpage_lstViewUnit_ctrl1_row']//img");
@@ -262,7 +263,7 @@ public class Inpatient_EmergencyPatientpages extends BasePage {
 	public WebElement getInpatient_Emergencypatient_ipcasesheet_DiagnosSerchTextBox() {
 		return getElement(Inpatient_Emergencypatient_ipcasesheet_DiagnosSerchTextBox);
 	}
-	private By Inpatient_Emergencypatient_ipcasesheet_DiagnosVlaue=By.id("85437001$Streak testis");
+	private By Inpatient_Emergencypatient_ipcasesheet_DiagnosVlaue=By.id("33793000$Testicular infarction");
 	public WebElement getInpatient_Emergencypatient_ipcasesheet_DiagnosVlaue() {
 		return getElement(Inpatient_Emergencypatient_ipcasesheet_DiagnosVlaue);
 	}
@@ -349,6 +350,11 @@ public class Inpatient_EmergencyPatientpages extends BasePage {
 	private By Inpatient_Emergencypatient_ipcasesheet_DietPlan=By.id("ctl00_cphpage_trvSectionst22");
 	public WebElement getInpatient_Emergencypatient_ipcasesheet_DietPlan() {
 		return getElement(Inpatient_Emergencypatient_ipcasesheet_DietPlan);
+	}
+	
+	private By addnodropdown=By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchCriteria_dlData_ctl00_ddlCriteria");
+	public WebElement getaddnodropdown() {
+		return getElement(addnodropdown);
 	}
 //	public void prescription() {
 //	String parent3 = driver.getWindowHandle();

@@ -4,10 +4,12 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -56,7 +58,8 @@ public class Clinical_Record_ReportTest extends CrossBrowser {
 	@Test(priority = 3)
 	public void doNavigateToClinical_Record_Reports() {
 
-		
+		driver.manage().window().maximize();
+
 		CRR=hishomepage.doNavigateToClinical_Record_Reports();
 	}
 	@Test(priority = 4)
@@ -74,7 +77,7 @@ public class Clinical_Record_ReportTest extends CrossBrowser {
 		Thread.sleep(1000);
 
 	}
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void checkTheFunctionalityOfprescreption_itemIssue() throws InterruptedException  {
 		
 
@@ -122,8 +125,18 @@ public class Clinical_Record_ReportTest extends CrossBrowser {
 		utilobj.Window(driver);
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ctl00_ctl00_PageUpdateProgress")));
-		CRR.getExprotReport().click();
-		Thread.sleep(1000);
+		if (CRR.getExprotReport() != null) {
+		    try {
+		        CRR.getExprotReport().click();
+		    } catch (NoSuchElementException e) {
+		        System.out.println("Element not found: " + e.getMessage());
+		        Assert.fail("Test failed: Export Report button was not found.");
+		    }
+		} else {
+		    System.out.println("Extent Report not found: Test case failed.");
+		    Assert.fail("Test failed: Export Report button is missing.");
+		}
+
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("ctl00_ctl00_PageUpdateProgress")));
 		utilobj.ChildWindow(driver);
 		Thread.sleep(1000);

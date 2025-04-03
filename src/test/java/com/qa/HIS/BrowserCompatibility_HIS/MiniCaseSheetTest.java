@@ -68,7 +68,7 @@ public class MiniCaseSheetTest extends CrossBrowser{
 			minicasesheetpages=hishomepage.doNavigateToPatientCheckInForMinicasesheet();
 			//minicasesheetpages.GoToPatient_check_in(prop.getProperty("Staging_IPNumber2"));
 			Thread.sleep(2000);
-			minicasesheetpages.getpatientcheck_in_ip_txtboxLink().sendKeys(prop.getProperty("Staging_IPnumber"));
+			minicasesheetpages.getpatientcheck_in_ip_txtboxLink().sendKeys(prop.getProperty("Staging_IPNumber2"));
 			Thread.sleep(2000);
 			minicasesheetpages.getpatientcheck_in_LiveList_linkLink().click();
 			Thread.sleep(2000);
@@ -443,40 +443,46 @@ public class MiniCaseSheetTest extends CrossBrowser{
 			driver.switchTo().defaultContent();
 	   }
 	   
-@Test(priority = 10)
-@Parameters("browser")
-public void CLM_Mini_Standard_Casesheet_11(String Browser) throws InterruptedException{
-	Thread.sleep(2000);
-	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-	String parent3 = driver.getWindowHandle();
+	   @Test(priority = 10)
+	   @Parameters("browser")
+	   public void CLM_Mini_Standard_Casesheet_11(String Browser) throws InterruptedException {
+	       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	       String parentWindow = driver.getWindowHandle();
 
-	utilobj.Window(driver);
+	       utilobj.Window(driver);  // Handle window switch
+	       minicasesheetpages.getminicasesheet_ButtonAdvice().click();
+	       utilobj.ChildWindow(driver);  // Handle new window switch
 
-	minicasesheetpages.getminicasesheet_ButtonAdvice().click();
-	Thread.sleep(2000);
-	utilobj.ChildWindow(driver);
-	Thread.sleep(2000);
-	wait.until(ExpectedConditions.visibilityOf(minicasesheetpages.getminicasesheet_AdviceRefferlRadioButton()));
-	Thread.sleep(2000);
+	       try {
+	           // Wait for visibility of the element
+	           wait.until(ExpectedConditions.visibilityOf(minicasesheetpages.getminicasesheet_AdviceRefferlRadioButton()))
+	               .click();
 
-	minicasesheetpages.getminicasesheet_AdviceRefferlRadioButton().click();
-	Thread.sleep(2000);
-	utilobj.selectDropdown(minicasesheetpages.getminicasesheet_AdviceSpecialLization(), driver, "General Medicine", Browser);
-	Thread.sleep(2000);
-	minicasesheetpages.getminicasesheet_AdviceAddbutton().click();
-	
-	Thread.sleep(2000);
-	utilobj.JSClick(driver.findElement(By.id("btnSaveClose")), driver);
-	Thread.sleep(2000);
-//	utilobj.waitForalert(driver);
-//
-//	driver.switchTo().alert().accept();
-	driver.switchTo().window(parent3);
+	           utilobj.selectDropdown(minicasesheetpages.getminicasesheet_AdviceSpecialLization(), driver, "General Medicine", Browser);
+	           minicasesheetpages.getminicasesheet_AdviceAddbutton().click();
 
-	driver.switchTo().defaultContent();
-	
-}
-@Test(priority = 11)
+	           // Save and close
+	           utilobj.JSClick(driver.findElement(By.id("btnSaveClose")), driver);
+
+	           // Handle alert if present
+	           try {
+	               wait.until(ExpectedConditions.alertIsPresent()).accept();
+	           } catch (Exception e) {
+	               System.out.println("No alert present.");
+	           }
+	           
+	       } catch (Exception e) {
+	           System.out.println("Server error encountered or element not found. Switching back to the parent window.");
+	           Assert.fail("Test failed: Unable to locate 'Advice Referral Radio Button' due to server issue.");
+
+	       } finally {
+	           // Ensure switch back to the parent window
+	           driver.switchTo().window(parentWindow);
+	           driver.switchTo().defaultContent();
+	       }
+	   }
+
+	   @Test(priority = 11)
 public void CLM_Mini_Standard_Casesheet_15() throws InterruptedException{
 	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 	Thread.sleep(2000);

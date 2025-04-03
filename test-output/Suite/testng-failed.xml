@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.qa.HIS.BrowserCompatibility_HIS.Listner"/>
   </listeners>
-  <test thread-count="5" name="Chrome(failed)">
-    <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest">
+      <class name="com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest">
         <methods>
-          <include name="CheckFunctionalityOfFollowUp" invocation-numbers="0"/>
+          <include name="ChecktheFunctionalityOfUpdateButtonOfEditMeternityCertificatePages" invocation-numbers="0"/>
           <include name="closeBrowser"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest -->
+      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest -->
     </classes>
-  </test> <!-- Chrome(failed) -->
+  </test> <!-- Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

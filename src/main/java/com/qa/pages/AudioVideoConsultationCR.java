@@ -25,7 +25,7 @@ public class AudioVideoConsultationCR extends BasePage{
 	private By ExprotReport_OKButon=By.id("submitexport");
 	private By ClearButton=By.id("ctl00_ctl00_cphpage_cphReport_btnClear");
 	private By VideoconsultationLink =By.id("ctl00_cphpage_lnkVideoConsultation");
-	private By VideoConsultationCheckinlink =By.id("ctl00_cphpage_gdvSearchConsultation_ctl03_lnkMeetingEmbedded");
+	private By VideoConsultationCheckinlink =By.id("ctl00_cphpage_gdvSearchConsultation_ctl02_lnkMeetingEmbedded");
 	private By SendNotificationLink = By.id("ctl00_cphpage_gdvSearchConsultation_ctl03_lnkSendNotification");
 	
 	private By ChiefComplaintsTab = By.id("tab_ctl00_cphpage_tabSearch_tabPnlSearchResults");

@@ -8,7 +8,10 @@ import java.util.Calendar;
 
 import org.apache.xmlbeans.XmlException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -93,8 +96,9 @@ public class MaternityCertificateTest extends CrossBrowser{
 			//opdflowPages.getgenratechekIn();	
 			Thread.sleep(500);
 			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(60));
+			driver.manage().window().maximize();
 			 wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ctl00_cphpage_txtIPNO")));
-			 driver.findElement(By.id("ctl00_cphpage_txtIPNO")).sendKeys("1115104628");
+			 driver.findElement(By.id("ctl00_cphpage_txtIPNO")).sendKeys("1115104365");
 			 Thread.sleep(500);
 			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_cphpage_lnkbtnIPNo")));
 				driver.findElement(By.id("ctl00_cphpage_lnkbtnIPNo")).click();
@@ -142,20 +146,46 @@ public class MaternityCertificateTest extends CrossBrowser{
 				}
 			  Thread.sleep(500);
 			
-			wait.until(ExpectedConditions.visibilityOf(MaternityCertificatePage.getcheckin_no_link_Link()));
-			MaternityCertificatePage.getTxtboxCheckInno().sendKeys(checkIN);
-			Thread.sleep(2000);
-			MaternityCertificatePage.getimgCheckinnosearch().click();
-			Thread.sleep(1000);
-			wait.until(ExpectedConditions.visibilityOf(MaternityCertificatePage.getOpenStanderdCaseSheet()));
-            MaternityCertificatePage.getOpenStanderdCaseSheet().click();
-			Thread.sleep(500);
+			
+				    try {
+						wait.until(ExpectedConditions.visibilityOf(MaternityCertificatePage.getcheckin_no_link_Link()));
+
+						MaternityCertificatePage.getcheckin_no_link_Link().click();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+
+				
+				        try {
+							wait.until(ExpectedConditions.elementToBeClickable(MaternityCertificatePage.getimgConsultation()));
+							MaternityCertificatePage.getimgConsultation().click();
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+			
+			 
+			 try {
+				MaternityCertificatePage.getcheckinnospc().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 
+			 
+			
 			try {
 				MaternityCertificatePage.getpopup_ok().click();
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
+		
+		
+			
+			
 			Thread.sleep(2000);
 			MaternityCertificatePage.getgeneralexam().click();
 			Thread.sleep(500);
@@ -169,6 +199,10 @@ public class MaternityCertificateTest extends CrossBrowser{
 				e.printStackTrace();
 			}
 			
+		
+			
+		
+			
 			Thread.sleep(500);
 			MaternityCertificatePage.gettxtRemark().sendKeys("30");
 			Thread.sleep(500);
@@ -176,6 +210,12 @@ public class MaternityCertificateTest extends CrossBrowser{
 			MaternityCertificatePage.getbtnSave().click();
 			Thread.sleep(2000);
 			utilobj.SwitchToChildWindow(driver, "CaseSheetM");
+			try {
+				MaternityCertificatePage.getpopup_ok().click();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			Thread.sleep(1000);
 			MaternityCertificatePage.getMatCertifbtn().click();
 			Thread.sleep(500);
@@ -215,70 +255,84 @@ public class MaternityCertificateTest extends CrossBrowser{
             MaternityCertificatePage.getButtonOK().click();
             Thread.sleep(2000);
             MaternityCertificatePage.getButtonOK().click();
+            
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("black_overlay"))); 
+
 			
 			
 		}
 		
+	
+
 		@Test(priority = 7)
 		@Parameters("browser")
 		public void testcaseforMaternityCertification(String Browser) throws InterruptedException, AWTException, IOException, XmlException {
-			WebDriverWait wait=new WebDriverWait(driver, Duration.ofMinutes(2));
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(60));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+			MaternityCertificatePage = hishomepage.doNavigatetomaternitycertificate();
+
+
+			WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.id("ctl00_cphpage_imgbtnInsuranceno")));
+
+			Actions actions = new Actions(driver);
+			actions.moveToElement(element1).click().perform();
 			
-			Thread.sleep(5000);
-		MC.getMaternitycertification_IPnoLink().click();
 			Thread.sleep(4000);
-			MC.getMaternitycertification_IPno_searchtextboxLink().sendKeys("1199900090");
+			  utilobj.selectDropdown(MaternityCertificatePage.getddcontains(), driver, "Equals",Browser);
+
+			  MaternityCertificatePage.getMaternitycertification_IPno_searchtextboxLink().sendKeys("1115104365");
 			Thread.sleep(4000);
-			MC.getMaternitycertification_IPno_searchbuttonlink().click();
+			MaternityCertificatePage.getMaternitycertification_IPno_searchbuttonlink().click();
 			Thread.sleep(4000);
-			MC.getMaternitycertification_IPno_selectRadioButtonLink().click();
+			MaternityCertificatePage.getMaternitycertification_IPno_selectRadioButtonLink().click();
 			Thread.sleep(4000);
 			
-			MC.getMaternitycertification_IPno_selectButtonLink().click();
+			MaternityCertificatePage.getMaternitycertification_IPno_selectButtonLink().click();
 			Thread.sleep(4000);
-			MC.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys("22");
+			MaternityCertificatePage.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys("22");
 			Thread.sleep(4000);
-			MC.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys(Keys.ENTER);
+			MaternityCertificatePage.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys(Keys.ENTER);
 			Thread.sleep(4000);
-			MC.getMaternitycertification_layout_certificateOfpregnancyradiobuttonLink().click();
+			MaternityCertificatePage.getMaternitycertification_layout_certificateOfpregnancyradiobuttonLink().click();
 			Thread.sleep(4000);
-			MC.getMaternitycertification_layout_certificateOfpregnancy_RemarxLink().sendKeys("...........TestRemarks.........");
+			MaternityCertificatePage.getMaternitycertification_layout_certificateOfpregnancy_RemarxLink().sendKeys("...........TestRemarks.........");
 			  Thread.sleep(4000);
-			  MC.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().clear();
+			  MaternityCertificatePage.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().clear();
 			  Thread.sleep(4000);
-			  MC.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys("37");
+			  MaternityCertificatePage.getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys("37");
 			  Thread.sleep(4000);
-			  MC. getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys(Keys.ENTER);
+			  MaternityCertificatePage. getMaternitycertification_Layout_DurationofpragnancytxtboxLink().sendKeys(Keys.ENTER);
 			  Thread.sleep(4000);
-			  MC.getMaternitycertification_layout_certificateofconfinementform18RadioButton().click();
+			  MaternityCertificatePage.getMaternitycertification_layout_certificateofconfinementform18RadioButton().click();
 			  Thread.sleep(2000);
 			  SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
 			  Calendar cal = Calendar.getInstance();
 			  String Date = sdf.format(cal.getTime());
 			  System.out.println(Date);
 			  Thread.sleep(4000);
-			  utilobj.JSEnterText(MC.getMaternitycertification_Layout_DateOfConfinement(), driver, Date);
+			  utilobj.JSEnterText(MaternityCertificatePage.getMaternitycertification_Layout_DateOfConfinement(), driver, Date);
 			  Thread.sleep(4000);
 			  cal.add(Calendar.DAY_OF_MONTH, 1);
 			  String newDate = sdf.format(cal.getTime());
 			  System.out.println(newDate);
 			  Thread.sleep(4000);
-			  utilobj.selectDropdown(MC.getMaternitycertification_layout_outcomeofpregnancyDDL(), driver, "Live Birth",Browser);
+			  utilobj.selectDropdown(MaternityCertificatePage.getMaternitycertification_layout_outcomeofpregnancyDDL(), driver, "Live Birth",Browser);
 			  Thread.sleep(4000);
-			  MC.getMaternitycertification_layout_Placeofconfinementtxtbox().sendKeys("test hospital");
+			  MaternityCertificatePage.getMaternitycertification_layout_Placeofconfinementtxtbox().sendKeys("test hospital");
 			  Thread.sleep(4000);
-			  MC.getMaternitycertification_layout_Remarks().sendKeys("Test Remarks...");
+			  MaternityCertificatePage.getMaternitycertification_layout_Remarks().sendKeys("Test Remarks...");
 			  Thread.sleep(4000);
-			  utilobj.JSEnterText(MC.getMaternitycertification_layout_IWintend(), driver, newDate);
+			  utilobj.JSEnterText(MaternityCertificatePage.getMaternitycertification_layout_IWintend(), driver, newDate);
 			  Thread.sleep(4000);
-			  utilobj.JSClick(MC.getMaternitycertification_SaveButton(),driver);
-			  wait.until(ExpectedConditions.visibilityOf(MC.getMaternitycertification_SaveButtonSuccesOK()));
+			  utilobj.JSClick(MaternityCertificatePage.getMaternitycertification_SaveButton(),driver);
+			  wait.until(ExpectedConditions.visibilityOf(MaternityCertificatePage.getMaternitycertification_SaveButtonSuccesOK()));
 
-			MC.getMaternitycertification_SaveButtonSuccesOK().click();
+			  MaternityCertificatePage.getMaternitycertification_SaveButtonSuccesOK().click();
 			
-			wait.until(ExpectedConditions.visibilityOf(MC.getMaternitycertification_SaveButtonSuccesOK()));
+			wait.until(ExpectedConditions.visibilityOf(MaternityCertificatePage.getMaternitycertification_SaveButtonSuccesOK()));
 			Thread.sleep(10000);
-			MC.getMaternitycertification_SaveButtonSuccesOK().click();
+			MaternityCertificatePage.getMaternitycertification_SaveButtonSuccesOK().click();
 			Thread.sleep(4000);
 			  String certificationNo=driver.findElement(By.id("ctl00_cphpage_txtCertificateno")).getAttribute("value");
 			  Thread.sleep(2000);
@@ -288,19 +342,22 @@ public class MaternityCertificateTest extends CrossBrowser{
 				Thread.sleep(2000);
 				utilobj.Window(driver);
 				Thread.sleep(1000);
-				MC.getMaternitycertification_printButton().click();
+				
+				WebElement printButton = driver.findElement(By.id("ctl00_cphpage_btnPrint"));
+				actions.moveToElement(printButton).click().perform();
+
 				Thread.sleep(3000);
 				utilobj.ChildWindow(driver);
+//				Thread.sleep(1000);
+//				System.out.println("hello window handle");
+//				Thread.sleep(1000);
+//				driver.manage().window().maximize();
+//				driver.close();
+//				Thread.sleep(1000);
+			driver.switchTo().window(parent3);
 				Thread.sleep(1000);
-				System.out.println("hello window handle");
-				Thread.sleep(1000);
-				driver.manage().window().maximize();
-				driver.close();
-				Thread.sleep(1000);
-				driver.switchTo().window(parent3);
-				Thread.sleep(1000);
-				MC.getMaternitycertification_ClearButton().clear();
-				Thread.sleep(1000);
+				MaternityCertificatePage.getMaternitycertification_ClearButton().click();
+//				Thread.sleep(1000);
 
 		}
 

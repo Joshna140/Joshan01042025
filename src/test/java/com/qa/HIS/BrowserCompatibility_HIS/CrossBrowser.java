@@ -23,8 +23,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.opera.OperaOptions;
+//import org.openqa.selenium.opera.OperaDriver;
+//import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -133,18 +133,18 @@ public class CrossBrowser {
 				        System.out.println("Browser Version is : "+((RemoteWebDriver) driver).getCapabilities().getBrowserVersion().toString());
 				        System.out.println("Platform Name is : "+((RemoteWebDriver) driver).getCapabilities().getPlatformName().toString());
 				}
-				else if(browser.equalsIgnoreCase("Opera")){
-					//set path to opera.exe
-					OperaOptions opt=new OperaOptions();
-					opt.addArguments("start-maximized");
-					
-					System.setProperty("webdriver.opera.driver","D:\\New folder\\BrowserCompatibility_HIS\\driver\\operadriver.exe");
-					//create Opera instance
-					driver = new OperaDriver(opt);
-//					 System.out.println("Browser Name is : "+((RemoteWebDriver) driver).getCapabilities().getBrowserName().toLowerCase());
-//				        System.out.println("Browser Version is : "+((RemoteWebDriver) driver).getCapabilities().getVersion().toString());
-//				        System.out.println("Platform Name is : "+((RemoteWebDriver) driver).getCapabilities().getPlatform().toString());
-				}
+//				else if(browser.equalsIgnoreCase("Opera")){
+//					//set path to opera.exe
+//					OperaOptions opt=new OperaOptions();
+//					opt.addArguments("start-maximized");
+//					
+//					System.setProperty("webdriver.opera.driver","D:\\New folder\\BrowserCompatibility_HIS\\driver\\operadriver.exe");
+//					//create Opera instance
+//					driver = new OperaDriver(opt);
+////					 System.out.println("Browser Name is : "+((RemoteWebDriver) driver).getCapabilities().getBrowserName().toLowerCase());
+////				        System.out.println("Browser Version is : "+((RemoteWebDriver) driver).getCapabilities().getVersion().toString());
+////				        System.out.println("Platform Name is : "+((RemoteWebDriver) driver).getCapabilities().getPlatform().toString());
+//				}
 		else{
 			//If no browser passed throw exception
 			throw new Exception("Browser is not correct");

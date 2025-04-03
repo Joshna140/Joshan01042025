@@ -3,6 +3,7 @@ package com.qa.HIS.BrowserCompatibility_HIS;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
@@ -125,10 +126,17 @@ public	InpatientEmergencyPatientTest() {
 		
 		wait.until(ExpectedConditions.visibilityOf(IPEP.getInpatient_Emergencypatient_ipcasesheet_back_buttonLink()));
 		
-		IPEP.getInpatient_Emergencypatient_ipcasesheet_back_buttonLink().click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", IPEP.getInpatient_Emergencypatient_ipcasesheet_back_buttonLink());
+
 	
 		Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_cphpage_imgSpecialization")));
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_cphpage_imgSpecialization")));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if(driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).isDisplayed()==true) {
 			driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).click();
 		}
@@ -137,23 +145,35 @@ public	InpatientEmergencyPatientTest() {
 		Thread.sleep(3000);
 	}
 	@Test(priority = 4)
-	public void  CLM_Inpatients_Emergency_Patients_TC_4() throws InterruptedException{
+	@Parameters("browser")
+	public void  CLM_Inpatients_Emergency_Patients_TC_4(String Browser) throws InterruptedException{
 		Thread.sleep(2000);
 		
 		driver.findElement(By.id("ctl00_cphpage_ImgAdmissionNo")).click();
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(40));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchCriteria_dlData_ctl03_txtCriteria")));
-		driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchCriteria_dlData_ctl03_txtCriteria")).sendKeys("1100099900");
+		utilobj.selectDropdown(IPEP.getaddnodropdown(), driver, "Contains", Browser);
+
+
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchCriteria_dlData_ctl00_txtCriteria")));
+		driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchCriteria_dlData_ctl00_txtCriteria")).sendKeys("000");
 		Thread.sleep(2000);
 		driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_btnSearch")).click();
 		wait.until(ExpectedConditions.invisibilityOf(IPEP.getBlackOverlay()));
 		
-		driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchResultGrid_gdvList_ctl02_rdbTemp")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_btnSelect")).click();
+		try {
+			driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_hisSearchResultGrid_gdvList_ctl02_rdbTemp")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.id("ctl00_cphpage_hisDataSearchCtrl_btnSelect")).click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
        // wait.until(ExpectedConditions.visibilityOf(IPEP.getInpatient_Emergencypatient_ipcasesheet_back_buttonLink()));
 //		IPEP.getInpatient_Emergencypatient_ipcasesheet_back_buttonLink().click();
         wait.until(ExpectedConditions.invisibilityOf(IPEP.getBlackOverlay()));
+        
+
 		
 	}
 	

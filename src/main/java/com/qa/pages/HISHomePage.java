@@ -223,9 +223,11 @@ public class HISHomePage extends BasePage {
 
 	private By InpatientsEmergencyLink = By.linkText("Inpatients/Emergency Patients");
 	private By UHIDcreationLink = By.linkText("UHID Creation");
+	
+	
 	/*clinical record*/
 	private By CertificateGenerationLink=By.linkText("Certificate Generation");
-	private By MaternitycertificategenrationLink=By.linkText("Maternity Certificate");
+	private By MaternitycertificateLink=By.linkText("Maternity Certificate");
 	private By Inpatients_EmergencyPatientsLink=By.linkText("Inpatients/Emergency Patients");
     private By OrderPacksPageLink=By.linkText("Order Packs");
     private By DosageTypeLink=By.linkText("DosageTypes");
@@ -235,7 +237,11 @@ public class HISHomePage extends BasePage {
 	
 	
 	
-    private WebElement getOrderPacksPageLink() {
+	public WebElement getMaternitycertificateLink() {
+		return getElement(MaternitycertificateLink);
+	}
+	
+	private WebElement getOrderPacksPageLink() {
         return getElement(OrderPacksPageLink);
 }
 	public WebElement getDosageTypeLink() {
@@ -301,6 +307,13 @@ public class HISHomePage extends BasePage {
 
 			return new HomeDrugDeliveryPage(driver);
 
+		}
+		
+		public MaternityCertificatePage doNavigatetomaternitycertificate()
+		{
+			utilobj.MoveElement(getClinicalRecordsLink(), driver);
+			getMaternitycertificateLink().click();
+			return new MaternityCertificatePage(driver);
 		}
 	 	
 	 	
@@ -671,9 +684,7 @@ public WebElement getReportTemplateLink() {
 		
 
 	}
-	public WebElement getMaternitycertificategenrationLink() {
-		return getElement(MaternitycertificategenrationLink);
-	}
+	
 	public WebElement getOperative_OTnotesLink() {
 		return getElement(Operative_OTnotesLink);
 	}
@@ -989,12 +1000,7 @@ getPharmacyIssueLink().click();
 //
 //		return new CertificationGenrationpages(driver);
 //	}
-	public MaternityCertificatepages doNavigatematernitycertificagte()
-	{
-		utilobj.MoveElement(getClinicalRecordsLink(), driver);
-		getMaternitycertificategenrationLink().click();
-		return new MaternityCertificatepages(driver);
-	}
+
 	public Inpatient_EmergencyPatientpages doNavigateInpatientsEmergencyPatients()
 	{
 		utilobj.MoveElement(getClinicalRecordsLink(), driver);

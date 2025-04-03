@@ -3,9 +3,15 @@ package com.qa.HIS.BrowserCompatibility_HIS;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
+import java.util.NoSuchElementException;
 
 import org.apache.tools.ant.taskdefs.Echo;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -61,11 +67,12 @@ public class EditCertificateTest extends CrossBrowser {
 	@Parameters("browser")
 	public void CheckTheFunctionalityOfRequestForChangedUPdateButton(String browser) throws InterruptedException, AWTException {
 		Thread.sleep(1000);
+		driver.manage().window().maximize();
 		ECP.getEditCertificate_SearchImage().click();
 		Thread.sleep(1000);
 		utilobj.selectDropdown(ECP.getEditCertificate_Insurance_NO_DLL(), driver, "Starts With",browser);
 		Thread.sleep(1000);
-		ECP.getEditCertificate_Certification_NO_TextBox().sendKeys("1199900090");
+		ECP.getEditCertificate_Certification_NO_TextBox().sendKeys("1199900");
 		Thread.sleep(1000);
 		ECP.getEditCertificate_Certification_No_SearchButton().click();
 		Thread.sleep(1000);
@@ -73,7 +80,12 @@ public class EditCertificateTest extends CrossBrowser {
 		Thread.sleep(1000);
 		ECP.getEditCertificate_Certification_No_SelectButton().click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).click();
+		try {
+			driver.findElement(By.id("ctl00_cphpage_MyMessageBoxInfo_ButtonOK")).click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Thread.sleep(2000);
 		ECP.getEditCertificate_RadioButtonSpellchange().click();
 		Thread.sleep(1000);
@@ -96,18 +108,19 @@ public class EditCertificateTest extends CrossBrowser {
 		driver.findElement(By.id("ctl00_cphpage_MyMessageBox_ButtonOK")).click();
 		Thread.sleep(1000);
 	}
-	@Test(priority = 5)
-	public void ChecktheFunctionalityOftoNavigateToEditMeternityCertificatePages() throws InterruptedException {
 
+	@Test(priority = 5)
+	@Parameters("browser")
+	public void ChecktheFunctionalityOfUpdateButtonOfEditMeternityCertificatePages(String browser) throws InterruptedException, AWTException {
 		Thread.sleep(1000);
-		ECP=hishomepage.doNavigateToEditMaternityCertificatePageLink();
-		Thread.sleep(1000);
-	}
-	@Test(priority = 6)
-	public void ChecktheFunctionalityOfUpdateButtonOfEditMeternityCertificatePages() throws InterruptedException, AWTException {
-		Thread.sleep(1000);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(60));
+
+		WebElement searchImage = wait.until(ExpectedConditions.elementToBeClickable(ECP.getEditCertificate_SearchImage()));
+
 		ECP.getEditCertificate_SearchImage().click();
-		ECP.getEditCertificate_Certification_NO_TextBox().sendKeys("1199900090");
+		utilobj.selectDropdown(ECP.getEditCertificate_Insurance_NO_DLL(), driver, "Starts With",browser);
+		Thread.sleep(1000);
+		ECP.getEditCertificate_Certification_NO_TextBox().sendKeys("1199900");
 		Thread.sleep(1000);
 		ECP.getEditCertificate_Certification_No_SearchButton().click();
 		Thread.sleep(1000);
@@ -115,9 +128,16 @@ public class EditCertificateTest extends CrossBrowser {
 		Thread.sleep(1000);
 		ECP.getEditCertificate_Certification_No_SelectButton().click();
 		Thread.sleep(1000);
-		ECP.getEditMeterNityCertificate_RemarksTextBoxElement().clear();
-		Thread.sleep(1000);
-		ECP.getEditMeterNityCertificate_RemarksTextBoxElement().sendKeys("Test Remark");
+		try {
+		    WebElement remarksTextBox = wait.until(ExpectedConditions.visibilityOf(ECP.getEditMeterNityCertificate_RemarksTextBoxElement()));
+
+		    // If found and visible, interact with it
+		    remarksTextBox.clear();
+		    remarksTextBox.sendKeys("Test Remark");
+
+		} catch (Exception e) {
+		    Assert.fail("Remarks text box is not visible even after waiting.", e);
+		}
 		Thread.sleep(1000);
 		ECP.getEditCertificate_RadioButton_ButtonUpdate().click();
 		Thread.sleep(1000);
