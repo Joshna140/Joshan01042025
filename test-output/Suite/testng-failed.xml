@@ -4,16 +4,25 @@
   <listeners>
     <listener class-name="com.qa.HIS.BrowserCompatibility_HIS.Listner"/>
   </listeners>
-  <test thread-count="5" name="Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest">
+      <class name="com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest">
         <methods>
-          <include name="ChecktheFunctionalityOfUpdateButtonOfEditMeternityCertificatePages" invocation-numbers="0"/>
+          <include name="CheckFunctionalityOfHistoryOfPresentillness" invocation-numbers="0"/>
+          <include name="CheckFunctionalityOfInvesitgationPrescriptions" invocation-numbers="0"/>
+          <include name="CheckFunctionalityofmedicationInPrescriptions" invocation-numbers="0"/>
+          <include name="CheckFunctionalityOfclinicaladvicePrescriptions" invocation-numbers="0"/>
           <include name="closeBrowser"/>
+          <include name="CheckFunctionalityOfFollowUp" invocation-numbers="0"/>
+          <include name="CheckFunctionalityOfDiagnosisPrescriptions" invocation-numbers="0"/>
+          <include name="CheckFunctionalityOfChiefComplants" invocation-numbers="0"/>
+          <include name="CheckFunctionalityOfPastHistory" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="CheckFunctionalityOfRefferalAdvice" invocation-numbers="0"/>
+          <include name="donavigatetoVideoConsultationpage"/>
         </methods>
-      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.EditCertificateTest -->
+      </class> <!-- com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest -->
     </classes>
-  </test> <!-- Firefox(failed) -->
+  </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

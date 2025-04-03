@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 03 14:53:07 IST 2025</td>
+<td>Started on:</td><td>Thu Apr 03 16:02:32 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>371 seconds (371975 ms)</td>
+<tr><td>Total time:</td><td>864 seconds (864674 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,83 +67,413 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.doNavigateToDrWorkList()'><b>doNavigateToDrWorkList</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
-<td></td>
-<td>6</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.donavigatetoVideoConsultationpage()'><b>donavigatetoVideoConsultationpage</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getVideoConsultationCheckinlink()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.donavigatetoVideoConsultationpage(AudioVideoConsultationCRTest.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1714317354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1714317354'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getVideoConsultationCheckinlink()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.donavigatetoVideoConsultationpage(AudioVideoConsultationCRTest.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>101</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
 <tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.doNavigateToSelectHospitalLocationTest()'><b>doNavigateToSelectHospitalLocationTest</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
-<td></td>
-<td>0</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfPastHistory()'><b>CheckFunctionalityOfPastHistory</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPastHistoryTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfPastHistory(AudioVideoConsultationCRTest.java:174)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace970890202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace970890202'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPastHistoryTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfPastHistory(AudioVideoConsultationCRTest.java:174)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfDiagnosisPrescriptions()'><b>CheckFunctionalityOfDiagnosisPrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptions_DiagnosisTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfDiagnosisPrescriptions(AudioVideoConsultationCRTest.java:556)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172754912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172754912'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptions_DiagnosisTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfDiagnosisPrescriptions(AudioVideoConsultationCRTest.java:556)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfChiefComplants()'><b>CheckFunctionalityOfChiefComplants</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getSearchChiefComplaints()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfChiefComplants(AudioVideoConsultationCRTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902064508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace902064508'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getSearchChiefComplaints()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfChiefComplants(AudioVideoConsultationCRTest.java:128)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfRefferalAdvice()'><b>CheckFunctionalityOfRefferalAdvice</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getReferralAdviceTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfRefferalAdvice(AudioVideoConsultationCRTest.java:343)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1209358542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1209358542'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getReferralAdviceTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfRefferalAdvice(AudioVideoConsultationCRTest.java:343)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfclinicaladvicePrescriptions()'><b>CheckFunctionalityOfclinicaladvicePrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptions_AdviceTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfclinicaladvicePrescriptions(AudioVideoConsultationCRTest.java:615)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7508078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7508078'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptions_AdviceTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfclinicaladvicePrescriptions(AudioVideoConsultationCRTest.java:615)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfFollowUp()'><b>CheckFunctionalityOfFollowUp</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getfollowuptab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfFollowUp(AudioVideoConsultationCRTest.java:396)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace704530496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace704530496'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getfollowuptab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfFollowUp(AudioVideoConsultationCRTest.java:396)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityofmedicationInPrescriptions()'><b>CheckFunctionalityofmedicationInPrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptionTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityofmedicationInPrescriptions(AudioVideoConsultationCRTest.java:432)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807397140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1807397140'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptionTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityofmedicationInPrescriptions(AudioVideoConsultationCRTest.java:432)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfHistoryOfPresentillness()'><b>CheckFunctionalityOfHistoryOfPresentillness</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getHistoryOfPresentIllnessTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfHistoryOfPresentillness(AudioVideoConsultationCRTest.java:312)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254145674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254145674'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getHistoryOfPresentIllnessTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfHistoryOfPresentillness(AudioVideoConsultationCRTest.java:312)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfInvesitgationPrescriptions()'><b>CheckFunctionalityOfInvesitgationPrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptions_InvestigationsTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfInvesitgationPrescriptions(AudioVideoConsultationCRTest.java:520)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace854719230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace854719230'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because the return value of &quot;com.qa.pages.AudioVideoConsultationCR.getPrescriptions_InvestigationsTab()&quot; is null
+	at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfInvesitgationPrescriptions(AudioVideoConsultationCRTest.java:520)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>82</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.doLoginTest()'><b>doLoginTest</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
 <td></td>
 <td>1</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
 <tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfDiagnosisPrescriptions()'><b>CheckFunctionalityOfDiagnosisPrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.doNavigateToDrWorkList()'><b>doNavigateToDrWorkList</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
 <td></td>
-<td>36</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
+<td>1</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
+<tr>
+<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.doNavigateToSelectHospitalLocationTest()'><b>doNavigateToSelectHospitalLocationTest</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
+<td></td>
+<td>0</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
 <tr>
 <td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.doNavigateToHISHomeTest()'><b>doNavigateToHISHomeTest</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
 <td></td>
-<td>16</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfRefferalAdvice()'><b>CheckFunctionalityOfRefferalAdvice</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>19</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfInvesitgationPrescriptions()'><b>CheckFunctionalityOfInvesitgationPrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>31</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfChiefComplants()'><b>CheckFunctionalityOfChiefComplants</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>30</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.donavigatetoVideoConsultationpage()'><b>donavigatetoVideoConsultationpage</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest</td>
-<td></td>
-<td>45</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfHistoryOfPresentillness()'><b>CheckFunctionalityOfHistoryOfPresentillness</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>17</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfFollowUp()'><b>CheckFunctionalityOfFollowUp</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>41</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfclinicaladvicePrescriptions()'><b>CheckFunctionalityOfclinicaladvicePrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>13</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityofmedicationInPrescriptions()'><b>CheckFunctionalityofmedicationInPrescriptions</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>46</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
-<tr>
-<td title='com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfPastHistory()'><b>CheckFunctionalityOfPastHistory</b><br>Test class: com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest<br>Parameters: Chrome</td>
-<td></td>
-<td>53</td>
-<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@5b04476e</td></tr>
+<td>11</td>
+<td>com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7</td></tr>
 </table><p>
 </body>
 </html>

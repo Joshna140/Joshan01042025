@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="4" failed="10" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-03T16:05:58 IST" name="Suite" finished-at="2025-04-03T16:15:23 IST" duration-ms="564838">
+  <suite started-at="2025-04-03T16:02:32 IST" name="Suite" finished-at="2025-04-03T16:16:57 IST" duration-ms="864674">
     <groups>
     </groups>
-    <test started-at="2025-04-03T16:05:58 IST" name="Chrome" finished-at="2025-04-03T16:15:23 IST" duration-ms="564838">
+    <test started-at="2025-04-03T16:02:32 IST" name="Chrome" finished-at="2025-04-03T16:16:57 IST" duration-ms="864674">
       <class name="com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:05:58 IST" name="setup" finished-at="2025-04-03T16:06:05 IST" duration-ms="6893" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:02:32 IST" name="setup" finished-at="2025-04-03T16:02:39 IST" duration-ms="6662" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="doLoginTest()[pri:0, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:06:05 IST" name="doLoginTest" finished-at="2025-04-03T16:06:08 IST" duration-ms="2925" status="PASS">
+        <test-method signature="doLoginTest()[pri:0, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:02:39 IST" name="doLoginTest" finished-at="2025-04-03T16:02:40 IST" duration-ms="1053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method signature="doNavigateToSelectHospitalLocationTest()[pri:1, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:06:08 IST" name="doNavigateToSelectHospitalLocationTest" finished-at="2025-04-03T16:06:08 IST" duration-ms="4" status="PASS">
+        <test-method signature="doNavigateToSelectHospitalLocationTest()[pri:1, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:02:40 IST" name="doNavigateToSelectHospitalLocationTest" finished-at="2025-04-03T16:02:40 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToSelectHospitalLocationTest -->
-        <test-method signature="doNavigateToHISHomeTest(java.lang.String)[pri:2, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:06:08 IST" name="doNavigateToHISHomeTest" finished-at="2025-04-03T16:06:20 IST" duration-ms="11706" status="PASS">
+        <test-method signature="doNavigateToHISHomeTest(java.lang.String)[pri:2, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:02:40 IST" name="doNavigateToHISHomeTest" finished-at="2025-04-03T16:02:52 IST" duration-ms="11978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToHISHomeTest -->
-        <test-method signature="doNavigateToDrWorkList()[pri:3, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:06:20 IST" name="doNavigateToDrWorkList" finished-at="2025-04-03T16:06:26 IST" duration-ms="5513" status="PASS">
+        <test-method signature="doNavigateToDrWorkList()[pri:3, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:02:53 IST" name="doNavigateToDrWorkList" finished-at="2025-04-03T16:02:54 IST" duration-ms="1627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doNavigateToDrWorkList -->
-        <test-method signature="donavigatetoVideoConsultationpage()[pri:4, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:06:26 IST" name="donavigatetoVideoConsultationpage" finished-at="2025-04-03T16:07:11 IST" duration-ms="44726" status="PASS">
+        <test-method signature="donavigatetoVideoConsultationpage()[pri:4, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:02:55 IST" name="donavigatetoVideoConsultationpage" finished-at="2025-04-03T16:04:36 IST" duration-ms="101166" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getVideoConsultationCheckinlink()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getVideoConsultationCheckinlink()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.donavigatetoVideoConsultationpage(AudioVideoConsultationCRTest.java:101)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- donavigatetoVideoConsultationpage -->
-        <test-method signature="CheckFunctionalityOfChiefComplants(java.lang.String)[pri:5, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:07:11 IST" name="CheckFunctionalityOfChiefComplants" finished-at="2025-04-03T16:07:41 IST" duration-ms="30148" status="PASS">
+        <test-method signature="CheckFunctionalityOfChiefComplants(java.lang.String)[pri:5, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:04:36 IST" name="CheckFunctionalityOfChiefComplants" finished-at="2025-04-03T16:05:58 IST" duration-ms="82069" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -53,10 +89,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "com.qa.pages.AudioVideoConsultationCR.getSearchChiefComplaints()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "com.qa.pages.AudioVideoConsultationCR.getSearchChiefComplaints()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfChiefComplants(AudioVideoConsultationCRTest.java:128)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfChiefComplants -->
-        <test-method signature="CheckFunctionalityOfPastHistory(java.lang.String)[pri:6, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:07:42 IST" name="CheckFunctionalityOfPastHistory" finished-at="2025-04-03T16:08:39 IST" duration-ms="57604" status="PASS">
+        <test-method signature="CheckFunctionalityOfPastHistory(java.lang.String)[pri:6, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:05:58 IST" name="CheckFunctionalityOfPastHistory" finished-at="2025-04-03T16:07:20 IST" duration-ms="82103" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -64,10 +136,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPastHistoryTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPastHistoryTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfPastHistory(AudioVideoConsultationCRTest.java:174)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfPastHistory -->
-        <test-method signature="CheckFunctionalityOfHistoryOfPresentillness(java.lang.String)[pri:7, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:08:40 IST" name="CheckFunctionalityOfHistoryOfPresentillness" finished-at="2025-04-03T16:09:11 IST" duration-ms="30895" status="PASS">
+        <test-method signature="CheckFunctionalityOfHistoryOfPresentillness(java.lang.String)[pri:7, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:07:20 IST" name="CheckFunctionalityOfHistoryOfPresentillness" finished-at="2025-04-03T16:08:43 IST" duration-ms="82085" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -75,10 +183,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getHistoryOfPresentIllnessTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getHistoryOfPresentIllnessTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfHistoryOfPresentillness(AudioVideoConsultationCRTest.java:312)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfHistoryOfPresentillness -->
-        <test-method signature="CheckFunctionalityOfRefferalAdvice(java.lang.String)[pri:8, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:09:11 IST" name="CheckFunctionalityOfRefferalAdvice" finished-at="2025-04-03T16:10:10 IST" duration-ms="58865" status="PASS">
+        <test-method signature="CheckFunctionalityOfRefferalAdvice(java.lang.String)[pri:8, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:08:43 IST" name="CheckFunctionalityOfRefferalAdvice" finished-at="2025-04-03T16:10:05 IST" duration-ms="82060" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,10 +230,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getReferralAdviceTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getReferralAdviceTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfRefferalAdvice(AudioVideoConsultationCRTest.java:343)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfRefferalAdvice -->
-        <test-method signature="CheckFunctionalityOfFollowUp(java.lang.String)[pri:9, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:10:10 IST" name="CheckFunctionalityOfFollowUp" finished-at="2025-04-03T16:11:31 IST" duration-ms="80501" status="PASS">
+        <test-method signature="CheckFunctionalityOfFollowUp(java.lang.String)[pri:9, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:10:05 IST" name="CheckFunctionalityOfFollowUp" finished-at="2025-04-03T16:11:27 IST" duration-ms="82126" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -97,10 +277,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getfollowuptab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getfollowuptab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfFollowUp(AudioVideoConsultationCRTest.java:396)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfFollowUp -->
-        <test-method signature="CheckFunctionalityofmedicationInPrescriptions(java.lang.String)[pri:10, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:11:31 IST" name="CheckFunctionalityofmedicationInPrescriptions" finished-at="2025-04-03T16:13:19 IST" duration-ms="107521" status="PASS">
+        <test-method signature="CheckFunctionalityofmedicationInPrescriptions(java.lang.String)[pri:10, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:11:27 IST" name="CheckFunctionalityofmedicationInPrescriptions" finished-at="2025-04-03T16:12:49 IST" duration-ms="82133" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -108,10 +324,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptionTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptionTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityofmedicationInPrescriptions(AudioVideoConsultationCRTest.java:432)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityofmedicationInPrescriptions -->
-        <test-method signature="CheckFunctionalityOfInvesitgationPrescriptions(java.lang.String)[pri:11, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:13:19 IST" name="CheckFunctionalityOfInvesitgationPrescriptions" finished-at="2025-04-03T16:14:29 IST" duration-ms="69637" status="PASS">
+        <test-method signature="CheckFunctionalityOfInvesitgationPrescriptions(java.lang.String)[pri:11, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:12:50 IST" name="CheckFunctionalityOfInvesitgationPrescriptions" finished-at="2025-04-03T16:14:12 IST" duration-ms="82118" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -119,10 +371,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptions_InvestigationsTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptions_InvestigationsTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfInvesitgationPrescriptions(AudioVideoConsultationCRTest.java:520)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfInvesitgationPrescriptions -->
-        <test-method signature="CheckFunctionalityOfDiagnosisPrescriptions(java.lang.String)[pri:12, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:14:30 IST" name="CheckFunctionalityOfDiagnosisPrescriptions" finished-at="2025-04-03T16:15:07 IST" duration-ms="37100" status="PASS">
+        <test-method signature="CheckFunctionalityOfDiagnosisPrescriptions(java.lang.String)[pri:12, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:14:12 IST" name="CheckFunctionalityOfDiagnosisPrescriptions" finished-at="2025-04-03T16:15:34 IST" duration-ms="82079" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -130,10 +418,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptions_DiagnosisTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptions_DiagnosisTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfDiagnosisPrescriptions(AudioVideoConsultationCRTest.java:556)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfDiagnosisPrescriptions -->
-        <test-method signature="CheckFunctionalityOfclinicaladvicePrescriptions(java.lang.String)[pri:13, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:15:08 IST" name="CheckFunctionalityOfclinicaladvicePrescriptions" finished-at="2025-04-03T16:15:22 IST" duration-ms="14629" status="PASS">
+        <test-method signature="CheckFunctionalityOfclinicaladvicePrescriptions(java.lang.String)[pri:13, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:15:34 IST" name="CheckFunctionalityOfclinicaladvicePrescriptions" finished-at="2025-04-03T16:16:57 IST" duration-ms="82096" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -141,10 +465,46 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptions_AdviceTab()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "com.qa.pages.AudioVideoConsultationCR.getPrescriptions_AdviceTab()" is null
+at com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest.CheckFunctionalityOfclinicaladvicePrescriptions(AudioVideoConsultationCRTest.java:615)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckFunctionalityOfclinicaladvicePrescriptions -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:15:23 IST" name="closeBrowser" finished-at="2025-04-03T16:15:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.qa.HIS.BrowserCompatibility_HIS.AudioVideoConsultationCRTest@4dc8caa7]" started-at="2025-04-03T16:16:57 IST" name="closeBrowser" finished-at="2025-04-03T16:16:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
